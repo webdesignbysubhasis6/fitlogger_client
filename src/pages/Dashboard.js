@@ -64,6 +64,7 @@ const CardWrapper = styled.div`
 `;
 
 const Dashboard = () => {
+  // eslint-disable-next-line
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState();
   const [buttonLoading, setButtonLoading] = useState(false);
@@ -73,7 +74,6 @@ const Dashboard = () => {
 -5 setsX15 reps
 -30 kg
 -10 min`);
-  loading=false;
   const dashboardData = async () => {
     setLoading(true);
     const token = localStorage.getItem("fitlogger-app-token");

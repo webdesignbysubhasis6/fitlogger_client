@@ -1,7 +1,7 @@
 import axios from "axios";
-
+// process.env.BACKEND_URL
 const API = axios.create({
-  baseURL: process.env.BACKEND_URL,
+  baseURL:'https://fitlogger-server-axik.onrender.com/api/' ,
 });
 
 export const UserSignUp = async (data) => API.post("/user/signup", data);
