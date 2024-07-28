@@ -73,7 +73,7 @@ const Dashboard = () => {
 -5 setsX15 reps
 -30 kg
 -10 min`);
-
+  loading=false;
   const dashboardData = async () => {
     setLoading(true);
     const token = localStorage.getItem("fitlogger-app-token");

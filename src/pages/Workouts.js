@@ -73,7 +73,7 @@ const SecTitle = styled.div`
 `;
 
 const Workouts = () => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const [todaysWorkouts, setTodaysWorkouts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [date, setDate] = useState("");
@@ -83,7 +83,7 @@ const Workouts = () => {
     const token = localStorage.getItem("fitlogger-app-token");
     await getWorkouts(token, date ? `?date=${date}` : "").then((res) => {
       setTodaysWorkouts(res?.data?.todaysWorkouts);
-      console.log(res.data);
+      // console.log(res.data);
       setLoading(false);
     });
   };
